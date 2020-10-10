@@ -1,6 +1,9 @@
 # DinoRun-PyQt-PyGame
 Integration between Pygame and PyQt5 for Dino Run Game
 
+# Support me
+<a href="https://www.buymeacoffee.com/hongvin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" width = "140px" ></a>
+
 # Concept
 ## Concept of the game and the design flow.
 This game is purely designed with PyGame library. To link two different GUIs is not possible. As such, a simple trick is done. It is started with initializing the PyGame library to run a GUI (pygame.init()).  Since the GUI created by PyGame is supposed to be ‘embedded’ into PyQt, the PyGame’s GUI is ‘hidden’ by setting it’s windows coordinate out of the screen, using os library with the command `os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (-300,-300)`.
